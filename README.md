@@ -1,0 +1,5 @@
+The feature importance analysis reveals that both models identify similar key features (e.g., mean radius, mean concave points), but the random forest provides a more trustworthy ranking due to its ensemble nature.
+This stability is crucial for explaining the model to stakeholders, such as medical professionals, who need confidence in which tumor characteristics drive predictions.
+The decision tree’s importance might highlight features due to overfitting (e.g., a less relevant feature in a deep node), whereas the random forest’s consensus approach aligns better with biological relevance.
+In terms of performance, the random forest’s higher accuracy (95-97% vs. 90-94%) makes it the better choice for this task. This improvement is not just numerical but practical— in a medical context, a 2-5% accuracy boost could translate to fewer misdiagnosed cases, enhancing patient outcomes. 
+The trade-off is computational cost (random forest is slower to train), but for the Breast Cancer dataset’s size, this is negligible.
